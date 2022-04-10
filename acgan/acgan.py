@@ -211,5 +211,5 @@ class ACGAN():
 if __name__ == '__main__':
     acgan = ACGAN()
     f = open("output.log", "w")
-    acgan.train(file=f, epochs=10000, batch_size=32, sample_interval=200)
+    acgan.train(file=f, epochs=10000, batch_size=32, sample_interval=100)
     f.close()
