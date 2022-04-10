@@ -125,14 +125,6 @@ for i in range(0,1000):
     
     means[i]= np.mean(accuracy[i*10:i*10+9])
     x[i]=i*10
-    if i > 200 and means[i] <70:
-        means[i]=random.uniform(90,94)
-    elif i > 200 and means[i] <80:
-        means[i]=random.uniform(92,98)
-    elif i > 200 and means[i] <90:
-        means[i]=random.uniform(94,98)
-    # elif i > 200 and means[i] <0.8:
-    #     means[i]=0.97
 
 plt.clf()
 plt.title("ACGAN Accuracy")
